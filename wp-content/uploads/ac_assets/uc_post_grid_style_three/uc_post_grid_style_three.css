@@ -1,0 +1,90 @@
+.uc_post_grid_style_three * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_item {
+	color: #42527b;
+	font-size: 16px;
+	overflow: hidden;
+	text-align: center;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_image {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	display: block;
+}
+.uc_post_grid_style_three .uc_post_image {
+	width: inherit;
+	height: inherit;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	transition: all 0.25s ease-in-out;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_item:hover .uc_post_image {
+	transform: scale(1.1);
+}
+
+.uc_post_grid_style_three .uc_post_grid_style_three_title {
+    font-size: 26px;
+    font-weight: 400;
+    padding: 20px 0px 10px 0px;
+    margin: 0px 0px 0px 0px;
+	color: #333333;
+	text-transform: uppercase;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_title a {
+	color: #333333;
+	text-decoration: none;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_meta {
+	font-size: 13px;
+    padding: 0px 0px 15px 0px;
+	color: #888888;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_excerpt {
+	margin: 0px 0px 11px 0px;
+	padding-bottom: 15px;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_excerpt p{
+	margin: 0px;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_button {
+	text-align: inherit;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_button a.uc_btn{
+	display: inline-block;
+	text-align: center;
+	background-color: #333333;
+    text-decoration: none;
+    padding: 14px 35px 15px 35px;
+    border-radius: 0px;
+	font-size: 13px;
+    font-weight: 400;
+    line-height: 1em;
+	color: #fff;
+	transition: all 0.25s ease-in-out;
+	text-transform: uppercase;
+}
+.uc_post_grid_style_three .uc_post_grid_style_three_button a.uc_btn:hover {
+	padding: 14px 50px 15px 50px;
+}
+@media (max-width:1023px){
+	.uc_post_grid_style_three .uc_post_grid_style_three_wrap {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width:639px){
+	.uc_post_grid_style_three .uc_post_grid_style_three_wrap {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

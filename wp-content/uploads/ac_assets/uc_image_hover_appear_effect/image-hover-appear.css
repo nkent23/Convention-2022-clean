@@ -1,0 +1,132 @@
+
+.uc_image_hover_appear *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.uc_image_hover_appear .uc_ih_appear_container{
+	font-family: 'Raleway', sans-serif;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    background: #000000;
+    text-align: center;
+	font-size:15px;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container img{
+	opacity: 1;
+	width: 100%;
+	position:relative;
+	z-index:100;
+	display:block;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container:hover img{
+	opacity: 0.2;
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+	}	
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_content{
+	top: 50%;
+    left: 40px;
+    right: 40px;
+    position: absolute;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+	z-index:100;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_content .uc_ih_appear_title{
+	position: relative;
+	font-size:24px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 0 5px;
+	-webkit-transform: translateY(75%);
+	transform: translateY(75%);
+	}
+	
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_content .uc_ih_appear_title span{
+	font-weight: 800;
+	}	
+
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_content .uc_ih_appear_desc{
+	font-size: 0.9em;
+    font-weight: 500;
+	opacity:0;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container:hover .uc_ih_appear_content .uc_ih_appear_title,.uc_image_hover_appear .uc_ih_appear_container:hover .uc_ih_appear_content .uc_ih_appear_desc{
+	opacity: 1;
+    border-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+	}		
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_border-top,
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_border-bottom{
+	position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    content: '';
+    opacity: 0;
+    -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+    transition: opacity 0.6s, -webkit-transform 0.6s, -moz-transform 0.6s, -o-transform 0.6s, transform 0.6s;
+	z-index:100;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container:hover .uc_ih_appear_border-top,
+.uc_image_hover_appear .uc_ih_appear_container:hover .uc_ih_appear_border-bottom{
+	opacity: 0.8;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+
+	}		
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_border-top{
+	border-top: 1px double #fff;
+    border-bottom: 1px double #fff;
+    -webkit-transform: scale(0, 1);
+    transform: scale(0, 1);
+	}
+
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_border-bottom{
+	border-right: 1px double #fff;
+	border-left: 1px double #fff;
+	-webkit-transform: scale(1, 0);
+	transform: scale(1, 0);
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_link{
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 101;
+	}
+	
+.uc_image_hover_appear .uc_ih_appear_container .uc_ih_appear_overlay{
+	background-color:#36100c;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	z-index: 99;
+	}				
+	
+
+

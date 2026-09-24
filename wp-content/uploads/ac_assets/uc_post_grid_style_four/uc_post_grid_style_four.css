@@ -1,0 +1,97 @@
+.uc_post_grid_style_four * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_wrap {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_item {
+	color: #42527b;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 0;
+    background-color: #ffffff;
+    text-align: left;
+    border-top: 5px solid #03f8b5;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_image {
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	display: block;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_container {
+	padding: 25px 30px 40px;
+}
+.uc_post_grid_style_four .uc_post_image {
+	width: inherit;
+	height: inherit;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	transition: all 0.25s ease-in-out;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_item:hover .uc_post_image {
+	transform: scale(1.1);
+}
+
+.uc_post_grid_style_four .uc_post_grid_style_four_title {
+    font-size: 22px;
+    font-weight: 700;
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+	color: #42527b;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_title a {
+	color: #42527b;
+	text-decoration: none;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_meta {
+	font-size: 11px;
+    padding:5px 10px 5px 10px;
+	color: #42527b;
+	background-color: #f4f4fa;
+	font-weight: 400;
+    text-transform: uppercase;
+	margin-bottom: 15px;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_excerpt {
+	margin: 0px 0px 11px 0px;
+	padding-bottom: 15px;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_excerpt p{
+	margin: 0px;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_button {
+	text-align: inherit;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_button a.uc_btn{
+	background-color: transparent;
+    background-image: linear-gradient(180deg, #03feaa 0%, #01cff9 100%);
+    text-decoration: none;
+    padding: 13px 22px 14px 22px;
+	font-size: 11px;
+    font-weight: 600;
+    line-height: 1.1em;
+	color: #fff;
+	transition: all 0.25s ease-in-out;
+	text-transform: uppercase;
+}
+.uc_post_grid_style_four .uc_post_grid_style_four_button a.uc_btn:hover {
+	background-image: linear-gradient(180deg, #01cff9 0%, #03feaa 100%);
+}
+@media (max-width:1023px){
+	.uc_post_grid_style_four .uc_post_grid_style_four_wrap {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (max-width:639px){
+	.uc_post_grid_style_four .uc_post_grid_style_four_wrap {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

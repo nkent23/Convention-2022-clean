@@ -1,0 +1,144 @@
+.blox-alternating-icon-timeline * { 
+	margin: 0; 
+	padding: 0; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+.blox-alternating-icon-timeline{
+	font-family: inherit;
+	font-size:14px;
+	color:#333333;
+	padding:0px 20px;
+	margin:0px;
+	list-style:none;
+	text-align:left;
+	}
+
+.blox-alternating-icon-timeline li{
+	position:relative;
+	padding:20px 0 0px 0;
+	margin:0 calc(50% - 27px) 0 0;
+	}
+	
+.blox-alternating-icon-timeline li:nth-child(2n){
+	margin:0 0 0 calc(50% - 27px);
+	}
+	
+.blox-alternating-icon-timeline li:nth-child(2n) .blox-icon{
+	right:auto;
+	left:-77px;
+	margin-right:0;
+	margin-left:-7px;
+	}
+	
+.blox-alternating-icon-timeline li:nth-child(2n) .blox-wrapper{
+	margin:0 0px 0 84px;
+	}	
+	
+.blox-alternating-icon-timeline li:nth-child(2n) .blox-wrapper:before{
+	right:auto;
+	left:-9px;
+	}
+	
+.blox-alternating-icon-timeline li:nth-child(2n):before{
+	right:auto;
+	left:25px;
+	}
+	
+	
+.blox-alternating-icon-timeline li ul{
+	list-style:none;
+	margin:10px 0 0 0;
+	}	
+
+.blox-alternating-icon-timeline li ul li:before{
+	display:none;
+	}	
+	
+.blox-alternating-icon-timeline li:last-child::before{
+	height:81%;
+	display:none;
+	}	
+	
+.blox-alternating-icon-timeline li ul li{
+	margin:0;
+	padding:4px 0 4px 0;
+	}	
+	
+.blox-alternating-icon-timeline li:before{
+	position:absolute;
+	right:26px;
+	top:22px;
+	content:'';
+	height:100%;
+	border-left:3px solid #D7E4ED;
+	}
+	
+.blox-alternating-icon-timeline li .blox-wrapper{
+	padding:20px 24px 20px 28px;
+	margin:0 84px 0 0px;
+	position:relative;
+	}
+	
+.blox-alternating-icon-timeline li .blox-wrapper:before{
+	display:block;
+	content:'';
+	}	
+
+	
+.blox-alternating-icon-timeline .blox-content{
+	font-size:14px;
+	line-height:19px;
+	padding:0 0 12px 0;
+	}
+.blox-alternating-icon-timeline .blox-heading{
+	font-size:18px;
+	font-weight:bold;
+	margin:0 0 7px 0;
+	} 	
+	
+.blox-alternating-icon-timeline li .blox-wrapper:before{
+	width:20px;
+	height:20px;
+	display:block;
+	content:'';
+	transform: rotate(-45deg);
+	position:absolute;
+	right:-9px;
+	top:20px;
+	background-color:inherit;
+	}	
+	
+	
+.blox-alternating-icon-timeline .blox-icon{
+	position:absolute;
+	font-size:20px;
+	color:#ffffff;
+	right:-77px;
+	top:0px;
+	line-height:54px;
+	text-align:center;
+	width:54px;
+	height:54px;
+	margin:0px -7px 0px 0px;
+	display:block;
+	border-radius:50%;
+	}
+	
+.blox-alternating-icon-timeline .blox-date{
+	font-style:italic;
+	font-size:12px;
+	}
+	
+	
+@media only screen and (max-width: 767px) { 
+	.blox-alternating-icon-timeline li,
+	.blox-alternating-icon-timeline li:nth-child(2n){ margin:0;}
+	.blox-alternating-icon-timeline li:nth-child(2n) .blox-icon, .blox-alternating-icon-timeline .blox-icon{ left:-77px; right:auto; margin-left:-7px; margin-right:0;}
+	.blox-alternating-icon-timeline li:nth-child(2n) .blox-wrapper, .blox-alternating-icon-timeline li .blox-wrapper { margin:0 0 0 84px;}
+	.blox-alternating-icon-timeline li:nth-child(2n) .blox-wrapper:before, .blox-alternating-icon-timeline li .blox-wrapper:before{ left:-9px; right:auto;}
+	.blox-alternating-icon-timeline li:nth-child(2n):before, .blox-alternating-icon-timeline li:before{ left:26px; right:auto;}
+}			
+
+	
